@@ -12,6 +12,7 @@
 		252157E82044404E0059141A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252157E62044404E0059141A /* Main.storyboard */; };
 		252157EA2044404E0059141A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 252157E92044404E0059141A /* Assets.xcassets */; };
 		252157ED2044404E0059141A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252157EB2044404E0059141A /* LaunchScreen.storyboard */; };
+		252157F520444AF60059141A /* canadaInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252157F420444AF60059141A /* canadaInfoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		252157E92044404E0059141A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		252157EC2044404E0059141A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		252157EE2044404E0059141A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		252157F420444AF60059141A /* canadaInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = canadaInfoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		252157E12044404E0059141A /* capgeminiTest */ = {
 			isa = PBXGroup;
 			children = (
-				252157E22044404E0059141A /* AppDelegate.swift */,
+				252157F420444AF60059141A /* canadaInfoTableViewCell.swift */,
 				252157E42044404E0059141A /* ViewController.swift */,
 				252157E62044404E0059141A /* Main.storyboard */,
-				252157E92044404E0059141A /* Assets.xcassets */,
-				252157EB2044404E0059141A /* LaunchScreen.storyboard */,
+				252157F620444B0E0059141A /* resources */,
 				252157EE2044404E0059141A /* Info.plist */,
 			);
 			path = capgeminiTest;
+			sourceTree = "<group>";
+		};
+		252157F620444B0E0059141A /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				252157E22044404E0059141A /* AppDelegate.swift */,
+				252157E92044404E0059141A /* Assets.xcassets */,
+				252157EB2044404E0059141A /* LaunchScreen.storyboard */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			files = (
 				252157E52044404E0059141A /* ViewController.swift in Sources */,
 				252157E32044404E0059141A /* AppDelegate.swift in Sources */,
+				252157F520444AF60059141A /* canadaInfoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
