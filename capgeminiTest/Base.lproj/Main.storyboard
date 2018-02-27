@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,7 +28,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="692"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCellidentifier" id="sem-k0-DJk" customClass="canadaInfoTableViewCell" customModule="capgeminiTest" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCellidentifier" id="sem-k0-DJk" customClass="CanadaInfoTableViewCell" customModule="capgeminiTest" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sem-k0-DJk" id="YSk-dX-81K">
@@ -40,11 +39,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9g6-vg-r1b">
-                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="43"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" secondItem="9g6-vg-r1b" secondAttribute="height" multiplier="60:43" id="aaF-s9-blX"/>
-                                                                <constraint firstAttribute="width" constant="60" id="kEv-al-tBP"/>
-                                                            </constraints>
+                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="43.666666666666664"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="eNg-JF-86u">
                                                             <rect key="frame" x="60" y="0.0" width="354" height="40.666666666666664"/>
@@ -74,6 +69,12 @@
                                                             </constraints>
                                                         </stackView>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="9g6-vg-r1b" secondAttribute="bottom" id="0gO-D9-cXd"/>
+                                                        <constraint firstItem="9g6-vg-r1b" firstAttribute="leading" secondItem="pFh-wZ-Jfd" secondAttribute="leading" id="EgU-Mq-SMU"/>
+                                                        <constraint firstItem="9g6-vg-r1b" firstAttribute="top" secondItem="pFh-wZ-Jfd" secondAttribute="top" id="XUA-mM-rk1"/>
+                                                        <constraint firstItem="eNg-JF-86u" firstAttribute="leading" secondItem="9g6-vg-r1b" secondAttribute="trailing" id="aMb-36-aq2"/>
+                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
@@ -85,14 +86,14 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="descriptionText" destination="38I-mA-f3l" id="UHx-3S-xX7"/>
-                                            <outlet property="imagefromHref" destination="9g6-vg-r1b" id="XM7-si-xMJ"/>
+                                            <outlet property="imagefromHref" destination="9g6-vg-r1b" id="5CB-TI-ug6"/>
                                             <outlet property="title" destination="J3s-JQ-nL9" id="7Jf-TH-xiJ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="ZtP-9F-B4V"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="v2h-X1-qwa"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="ZP0-tG-dwR"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="4rq-3k-wN6"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -110,7 +111,7 @@
                     </view>
                     <connections>
                         <outlet property="navitem" destination="aLc-0D-6D3" id="QQF-yg-jkP"/>
-                        <outlet property="tableView" destination="xVg-An-e95" id="EQA-Ko-lTx"/>
+                        <outlet property="tableViewInfo" destination="xVg-An-e95" id="p9r-bu-ywm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

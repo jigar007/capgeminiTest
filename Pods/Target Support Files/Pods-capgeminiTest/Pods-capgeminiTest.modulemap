@@ -1,0 +1,6 @@
+framework module Pods_capgeminiTest {
+  umbrella header "Pods-capgeminiTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -12,7 +12,11 @@
 		252157E82044404E0059141A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252157E62044404E0059141A /* Main.storyboard */; };
 		252157EA2044404E0059141A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 252157E92044404E0059141A /* Assets.xcassets */; };
 		252157ED2044404E0059141A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252157EB2044404E0059141A /* LaunchScreen.storyboard */; };
-		252157F520444AF60059141A /* canadaInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252157F420444AF60059141A /* canadaInfoTableViewCell.swift */; };
+		252157F520444AF60059141A /* CanadaInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252157F420444AF60059141A /* CanadaInfoTableViewCell.swift */; };
+		252157F820444FEE0059141A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252157F720444FEE0059141A /* Constants.swift */; };
+		252157FD204451F90059141A /* canada.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252157FB204451F90059141A /* canada.swift */; };
+		252157FE204451F90059141A /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252157FC204451F90059141A /* Row.swift */; };
+		D031B14C882C69895A4E8010 /* Pods_capgeminiTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B389F2551536B06FE20EE6 /* Pods_capgeminiTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +27,13 @@
 		252157E92044404E0059141A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		252157EC2044404E0059141A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		252157EE2044404E0059141A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		252157F420444AF60059141A /* canadaInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = canadaInfoTableViewCell.swift; sourceTree = "<group>"; };
+		252157F420444AF60059141A /* CanadaInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaInfoTableViewCell.swift; sourceTree = "<group>"; };
+		252157F720444FEE0059141A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		252157FB204451F90059141A /* canada.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = canada.swift; sourceTree = "<group>"; };
+		252157FC204451F90059141A /* Row.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
+		72B389F2551536B06FE20EE6 /* Pods_capgeminiTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_capgeminiTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DE22BAE023C2FF9FA3CBA96 /* Pods-capgeminiTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capgeminiTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-capgeminiTest/Pods-capgeminiTest.release.xcconfig"; sourceTree = "<group>"; };
+		E7B86A064CE84B958BBD0E6B /* Pods-capgeminiTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capgeminiTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-capgeminiTest/Pods-capgeminiTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D031B14C882C69895A4E8010 /* Pods_capgeminiTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04FF134F6E323A4C9306A60B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7B86A064CE84B958BBD0E6B /* Pods-capgeminiTest.debug.xcconfig */,
+				9DE22BAE023C2FF9FA3CBA96 /* Pods-capgeminiTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		252157D62044404E0059141A = {
 			isa = PBXGroup;
 			children = (
 				252157E12044404E0059141A /* capgeminiTest */,
 				252157E02044404E0059141A /* Products */,
+				04FF134F6E323A4C9306A60B /* Pods */,
+				912FDBE862DF86694EA64F43 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,7 +78,9 @@
 		252157E12044404E0059141A /* capgeminiTest */ = {
 			isa = PBXGroup;
 			children = (
-				252157F420444AF60059141A /* canadaInfoTableViewCell.swift */,
+				252157FF2044656A0059141A /* Model */,
+				252157F720444FEE0059141A /* Constants.swift */,
+				252157F420444AF60059141A /* CanadaInfoTableViewCell.swift */,
 				252157E42044404E0059141A /* ViewController.swift */,
 				252157E62044404E0059141A /* Main.storyboard */,
 				252157F620444B0E0059141A /* resources */,
@@ -75,6 +99,23 @@
 			path = resources;
 			sourceTree = "<group>";
 		};
+		252157FF2044656A0059141A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				252157FB204451F90059141A /* canada.swift */,
+				252157FC204451F90059141A /* Row.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		912FDBE862DF86694EA64F43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72B389F2551536B06FE20EE6 /* Pods_capgeminiTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 252157F12044404E0059141A /* Build configuration list for PBXNativeTarget "capgeminiTest" */;
 			buildPhases = (
+				E87F44A461A746DB6A580BB3 /* [CP] Check Pods Manifest.lock */,
 				252157DB2044404E0059141A /* Sources */,
 				252157DC2044404E0059141A /* Frameworks */,
 				252157DD2044404E0059141A /* Resources */,
+				858EC5EAD868A1470D0C81DE /* [CP] Embed Pods Frameworks */,
+				54AF47D898287E51B90DE345 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,14 +186,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		54AF47D898287E51B90DE345 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-capgeminiTest/Pods-capgeminiTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		858EC5EAD868A1470D0C81DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-capgeminiTest/Pods-capgeminiTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-capgeminiTest/Pods-capgeminiTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E87F44A461A746DB6A580BB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-capgeminiTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		252157DB2044404E0059141A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				252157E52044404E0059141A /* ViewController.swift in Sources */,
+				252157FE204451F90059141A /* Row.swift in Sources */,
 				252157E32044404E0059141A /* AppDelegate.swift in Sources */,
-				252157F520444AF60059141A /* canadaInfoTableViewCell.swift in Sources */,
+				252157F520444AF60059141A /* CanadaInfoTableViewCell.swift in Sources */,
+				252157F820444FEE0059141A /* Constants.swift in Sources */,
+				252157FD204451F90059141A /* canada.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +385,7 @@
 		};
 		252157F22044404E0059141A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7B86A064CE84B958BBD0E6B /* Pods-capgeminiTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +401,7 @@
 		};
 		252157F32044404E0059141A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DE22BAE023C2FF9FA3CBA96 /* Pods-capgeminiTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
